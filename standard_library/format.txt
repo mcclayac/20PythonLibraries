@@ -1,0 +1,18 @@
+
+
+parsedatetime
+
+
+
+print('{:30s}{:>30s}'.format('Input', 'Result'))
+print('=' * 60)
+for e in examples:
+    dt, result = cal.parseDT(e)
+    print('{:<30s}{:>30}'.format('"' + e + '"', dt.ctime()))
+
+
+
+
+for e in examples:
+    dt, result = cal.parseDT(e)
+    print('{:<30s}{:>30}'.format('"' + e + '"', dt.ctime()))
