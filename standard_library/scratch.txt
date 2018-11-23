@@ -1,0 +1,43 @@
+
+
+#  Ordered Dictionary
+dict(zip(ascii_lowercase, range(4)))
+from string import ascii_lowercase
+dict(zip(ascii_lowercase, range(4)))
+dict(zip(ascii_lowercase, range(5)))
+dict(zip(ascii_lowercase, range(6)))
+dict(zip(ascii_lowercase, range(7)))
+
+#  import collections
+from collections import OrderedDict
+OrderedDict(zip(ascii_lowercase, range(5)))
+OrderedDict(zip(ascii_lowercase, range(6)))
+OrderedDict(zip(ascii_lowercase, range(7)))
+
+
+# Collections
+
+The same criteria applies not only to dictionaries,
+but also to lists, and strings. For each case, when
+you need to subclass, consider using
+collections.UserDict , collections.UserList ,
+and collections.UserString , respectively.
+
+#  Named Tuple
+import collections
+UserRecord = collections.namedtuple("UserRecord", ('user_id', 'username', 'first_name', 'last_name'))
+def fetch_data2():
+        return UserRecord(42, 'jsmith', 'John', 'Smith')
+result = fetch_data2()
+result.user_id
+result.username
+result.first_name
+
+from collections import namedtuple
+A = namedtuple('A', 'count enabled color')
+tup = A(count=1, enabled=True, color="red")
+tup.count
+tup.enabled
+tup.color
+history
+
